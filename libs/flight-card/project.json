@@ -40,7 +40,19 @@
       "configurations": {
         "production": {
           "devServerTarget": "flight:serve:production"
+        },
+        "watch": {
+          "watch": true
         }
+      }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/flight-card/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "flight:build"
       }
     }
   }

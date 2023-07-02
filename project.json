@@ -96,6 +96,22 @@
       "options": {
         "buildTarget": "e2e-testing-workshop:build"
       }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "e2e-testing-workshop:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "e2e-testing-workshop:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "e2e-testing-workshop:serve-static"
+        }
+      }
     }
   }
 }

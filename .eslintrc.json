@@ -60,6 +60,19 @@
       "files": ["*.html"],
       "extends": ["plugin:@nx/angular-template"],
       "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.cy.{ts,js,tsx,jsx}",
+        "src/app/pages/list/cypress/**/*.{ts,js,tsx,jsx}"
+      ],
+      "rules": {}
     }
-  ]
+  ],
+  "extends": ["plugin:cypress/recommended"]
 }

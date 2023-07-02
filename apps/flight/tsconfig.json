@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es2022",
     "useDefineForClassFields": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -19,16 +20,13 @@
     },
     {
       "path": "./tsconfig.editor.json"
-    },
-    {
-      "path": "./src/app/pages/list/cypress/tsconfig.json"
     }
   ],
+  "extends": "../../tsconfig.json",
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  },
-  "extends": "./tsconfig.base.json"
+  }
 }

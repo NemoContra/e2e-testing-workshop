@@ -5,7 +5,7 @@ import {
   Renderer2,
 } from '@angular/core';
 
-import { BODY } from '../common/body';
+import { BODY } from '../../common/body';
 
 @Component({
   standalone: true,

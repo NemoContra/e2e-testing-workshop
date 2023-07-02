@@ -7,9 +7,9 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { Flight } from '../models/flight';
-import { FlightService } from '../services/flight.service';
-import { CardComponent } from '../shared/flight-card/card.component';
+import { Flight } from '../../models/flight';
+import { FlightService } from '../../services/flight.service';
+import { CardComponent } from '../../shared/flight-card/card.component';
 
 @Component({
   standalone: true,

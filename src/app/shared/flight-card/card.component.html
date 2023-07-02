@@ -1,0 +1,26 @@
+<div
+  *ngIf="flight() as flight"
+  class="card"
+  [ngStyle]="{
+    'background-color': isSelected() ? 'rgb(204, 197, 185)' : 'white'
+  }"
+  [id]="id"
+>
+  <div class="header">
+    <h2 class="title">{{ flight.from }} - {{ flight.to }}</h2>
+  </div>
+  <div class="content">
+    <p>Flight-No.: #{{ flight.id }}</p>
+    <p>Date: {{ flight.date | date : 'long' }}</p>
+    <p>Delayed: {{ delayed() }}</p>
+
+    <p>
+      <button class="btn btn-default" *ngIf="!isSelected()" (click)="select()">
+        Select
+      </button>
+      <button class="btn btn-default" *ngIf="isSelected()" (click)="deselect()">
+        Remove
+      </button>
+    </p>
+  </div>
+</div>

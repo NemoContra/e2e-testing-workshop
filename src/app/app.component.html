@@ -1,2 +1,13 @@
-<e2e-testing-workshop-nx-welcome></e2e-testing-workshop-nx-welcome>
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <flight-sidebar />
+  </div>
+
+  <div class="main-panel">
+    <flight-navbar />
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

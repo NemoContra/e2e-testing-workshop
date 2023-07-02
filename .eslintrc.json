@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["!**/*"],
-  "plugins": ["@nx"],
+  "plugins": ["@nx", "import"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -15,7 +15,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "e2eTestingWorkshop",
+            "prefix": "flight",
             "style": "camelCase"
           }
         ],
@@ -23,8 +23,35 @@
           "error",
           {
             "type": "element",
-            "prefix": "e2e-testing-workshop",
+            "prefix": "flight",
             "style": "kebab-case"
+          }
+        ],
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": true,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+          }
+        ],
+        "import/order": [
+          "error",
+          {
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            },
+            "pathGroups": [
+              {
+                "pattern": "@testing-workshop/**",
+                "group": "external",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": ["builtin"],
+            "newlines-between": "always"
           }
         ]
       }

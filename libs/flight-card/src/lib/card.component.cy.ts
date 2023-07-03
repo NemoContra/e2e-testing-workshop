@@ -24,6 +24,8 @@ describe(CardComponent.name, () => {
       },
     });
 
+    cy.get('.card').should('exist');
+
     cy.get('.card').should(
       'have.css',
       'background-color',

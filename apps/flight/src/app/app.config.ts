@@ -1,4 +1,4 @@
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import {
   provideRouter,
@@ -15,6 +15,6 @@ export const appConfig: ApplicationConfig = {
       withEnabledBlockingInitialNavigation(),
       withComponentInputBinding()
     ),
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
   ],
 };

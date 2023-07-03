@@ -53,6 +53,11 @@
         "testingType": "component",
         "skipServe": true,
         "devServerTarget": "flight:build"
+      },
+      "configurations": {
+        "watch": {
+          "watch": true
+        }
       }
     }
   }

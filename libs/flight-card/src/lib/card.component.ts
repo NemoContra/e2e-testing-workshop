@@ -11,6 +11,9 @@ import { toObservable } from '@angular/core/rxjs-interop';
 import { Flight } from '@e2e-testing-workshop/models';
 import { createRandomId } from '@e2e-testing-workshop/common';
 
+/**
+ * This is a card which renders a flight in a human-readable way
+ */
 @Component({
   standalone: true,
   selector: 'flight-card',

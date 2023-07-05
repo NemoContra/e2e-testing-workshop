@@ -29,6 +29,22 @@
           "libs/flight-search/**/*.html"
         ]
       }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/flight-search/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "flight:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "flight:serve:production"
+        },
+        "watch": {
+          "watch": true
+        }
+      }
     }
   }
 }

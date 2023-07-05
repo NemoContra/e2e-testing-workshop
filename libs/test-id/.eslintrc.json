@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:cypress/recommended", "../../.eslintrc.base.json"],
+  "extends": ["../../.eslintrc.base.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "flight",
+            "prefix": "",
             "style": "camelCase"
           }
         ],
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "flight",
+            "prefix": "",
             "style": "kebab-case"
           }
         ]
@@ -30,10 +30,6 @@
     {
       "files": ["*.html"],
       "extends": ["plugin:@nx/angular-template"],
-      "rules": {}
-    },
-    {
-      "files": ["*.cy.{ts,js,tsx,jsx}", "cypress/**/*.{ts,js,tsx,jsx}"],
       "rules": {}
     }
   ]

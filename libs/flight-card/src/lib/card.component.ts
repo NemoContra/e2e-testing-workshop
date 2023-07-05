@@ -10,6 +10,7 @@ import {
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Flight } from '@e2e-testing-workshop/models';
 import { createRandomId } from '@e2e-testing-workshop/common';
+import { TestIdDirective } from '@e2e-testing-workshop/test-id';
 
 /**
  * This is a card which renders a flight in a human-readable way
@@ -17,7 +18,7 @@ import { createRandomId } from '@e2e-testing-workshop/common';
 @Component({
   standalone: true,
   selector: 'flight-card',
-  imports: [NgIf, DatePipe, NgStyle],
+  imports: [NgIf, DatePipe, NgStyle, TestIdDirective],
   templateUrl: './card.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -1,6 +1,7 @@
 <div
   *ngIf="flight() as flight"
   class="card"
+  testId="card"
   [ngStyle]="{
     'background-color': isSelected() ? 'rgb(204, 197, 185)' : 'white'
   }"
@@ -15,10 +16,20 @@
     <p>Delayed: {{ delayed() }}</p>
 
     <p>
-      <button class="btn btn-default" *ngIf="!isSelected()" (click)="select()">
+      <button
+        class="btn btn-default"
+        *ngIf="!isSelected()"
+        (click)="select()"
+        testId="select"
+      >
         Select
       </button>
-      <button class="btn btn-default" *ngIf="isSelected()" (click)="deselect()">
+      <button
+        class="btn btn-default"
+        *ngIf="isSelected()"
+        (click)="deselect()"
+        testId="remove"
+      >
         Remove
       </button>
     </p>

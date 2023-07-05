@@ -9,13 +9,14 @@ import { FormsModule } from '@angular/forms';
 import { CardComponent } from '@e2e-testing-workshop/flight-card';
 import { FlightService } from '@e2e-testing-workshop/services';
 import { Flight } from '@e2e-testing-workshop/models';
+import { TestIdDirective } from '@e2e-testing-workshop/test-id';
 
 @Component({
   standalone: true,
   selector: 'flight-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
-  imports: [FormsModule, JsonPipe, NgIf, NgFor, CardComponent],
+  imports: [FormsModule, JsonPipe, NgIf, NgFor, CardComponent, TestIdDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchComponent {

@@ -24,7 +24,9 @@
       "@e2e-testing-workshop/models": ["libs/models/src/index.ts"],
       "@e2e-testing-workshop/navbar": ["libs/navbar/src/index.ts"],
       "@e2e-testing-workshop/services": ["libs/services/src/index.ts"],
-      "@e2e-testing-workshop/sidebar": ["libs/sidebar/src/index.ts"]
+      "@e2e-testing-workshop/sidebar": ["libs/sidebar/src/index.ts"],
+      "@e2e-testing-workshop/test-helpers": ["libs/test-helpers/src/index.ts"],
+      "@e2e-testing-workshop/test-id": ["libs/test-id/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

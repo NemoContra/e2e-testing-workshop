@@ -1,4 +1,4 @@
-<h1>Flight Search</h1>
+<h1 testId="headline">Flight Search</h1>
 
 <form (submit)="search()">
   <div class="form-group">
@@ -7,6 +7,7 @@
       [ngModel]="from()"
       (ngModelChange)="from.set($event)"
       [ngModelOptions]="{ updateOn: 'change' }"
+      testId="from"
       class="form-control"
       minlength="3"
       name="from"
@@ -19,17 +20,20 @@
     <input
       [ngModel]="to()"
       (ngModelChange)="to.set($event)"
+      testId="to"
       class="form-control"
       name="to"
     />
   </div>
 
-  <button type="submit" class="btn" [disabled]="loading()">Search</button>
+  <button type="submit" class="btn" [disabled]="loading()" testId="search">
+    Search
+  </button>
 </form>
 
 <br />
 
-<div class="row">
+<div class="row" testId="flight-cards">
   <div
     *ngFor="let flight of flights()"
     class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3"

@@ -7,3 +7,5 @@
 - https://www.youtube.com/watch?v=4z5IhNdonv8
 - https://www.youtube.com/watch?v=wbsTfi4V0Jw
 - https://compodoc.app/guides/installation.html
+- https://filiphric.com/cypress-basics-selecting-elements
+- https://docs.cypress.io/guides/references/best-practices

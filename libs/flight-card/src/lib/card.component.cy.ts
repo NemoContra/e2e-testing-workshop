@@ -65,7 +65,6 @@ describe(CardComponent.name, () => {
           delayed: false,
         },
       },
-      autoSpyOutputs: true,
     }).then((response) => {
       getCard()
         .contains('Select')

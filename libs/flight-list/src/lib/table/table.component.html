@@ -1,0 +1,20 @@
+<table class="table" *ngIf="flights" testId="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>from</th>
+      <th>to</th>
+      <th>date</th>
+      <th>delayed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flight of flights">
+      <td>{{ flight.id }}</td>
+      <td>{{ flight.from }}</td>
+      <td>{{ flight.to }}</td>
+      <td>{{ flight.date | date }}</td>
+      <td>{{ flight.delayed ? 'yes' : 'no' }}</td>
+    </tr>
+  </tbody>
+</table>

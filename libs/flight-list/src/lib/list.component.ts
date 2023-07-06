@@ -3,13 +3,14 @@ import { AsyncPipe, DatePipe, NgForOf, NgIf } from '@angular/common';
 import { FlightService } from '@e2e-testing-workshop/services';
 import { Observable } from 'rxjs';
 import { Flight } from '@e2e-testing-workshop/models';
+import { TableComponent } from './table/table.component';
 
 @Component({
   standalone: true,
   selector: 'flight-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
-  imports: [NgForOf, NgIf, DatePipe, AsyncPipe],
+  imports: [NgForOf, NgIf, DatePipe, AsyncPipe, TableComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListComponent {

@@ -45,6 +45,20 @@
           "watch": true
         }
       }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/flight-list/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "flight:build"
+      },
+      "configurations": {
+        "watch": {
+          "watch": true
+        }
+      }
     }
   }
 }

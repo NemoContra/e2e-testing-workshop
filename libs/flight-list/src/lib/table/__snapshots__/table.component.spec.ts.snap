@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableComponent should render a table with flights 1`] = `
+<flight-table
+  flights={[Function Array]}
+>
+  <table
+    class="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          id
+        </th>
+        <th>
+          from
+        </th>
+        <th>
+          to
+        </th>
+        <th>
+          date
+        </th>
+        <th>
+          delayed
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          Graz
+        </td>
+        <td>
+          Mallorca
+        </td>
+        <td>
+          Oct 15, 2020
+        </td>
+        <td>
+          no
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Hamburg
+        </td>
+        <td>
+          Mallorca
+        </td>
+        <td>
+          Oct 15, 2020
+        </td>
+        <td>
+          no
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          Lohr
+        </td>
+        <td>
+          Miami
+        </td>
+        <td>
+          Oct 15, 2020
+        </td>
+        <td>
+          no
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</flight-table>
+`;

@@ -1,14 +1,16 @@
-import { getTableCell, getTableHead } from '../support/app.po';
+import { MountConfig } from 'cypress/angular';
+import { TableComponent } from './table.component';
 import { mockFlights } from '@e2e-testing-workshop/test-helpers';
+import { getTableCell, getTableHead } from '../../../cypress/support/app.po';
 
-describe('flight-list', () => {
-  beforeEach(() => {
-    cy.intercept('http://www.angular.at/api/flight', mockFlights).as('flights');
-    cy.visit('/flight-list');
-  });
-
-  it('should display the correct', () => {
-    cy.wait('@flights').its('request.body').should('be.empty');
+describe(TableComponent.name, () => {
+  it('should test the table', () => {
+    const mountConfig: MountConfig<TableComponent> = {
+      componentProperties: {
+        flights: mockFlights,
+      },
+    };
+    cy.mount(TableComponent, mountConfig);
 
     getTableHead(0).contains('id');
     getTableHead(1).contains('from');

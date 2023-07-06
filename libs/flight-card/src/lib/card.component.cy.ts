@@ -1,6 +1,7 @@
 import { CardComponent } from './card.component';
 import { MountConfig } from 'cypress/angular';
 import { getCard } from '../../cypress/support/app.po';
+import { HttpClient } from '@angular/common/http';
 
 describe(CardComponent.name, () => {
   const config: MountConfig<CardComponent> = {};

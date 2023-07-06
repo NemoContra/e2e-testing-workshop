@@ -9,6 +9,7 @@ export const testIds = [
   'flight-cards',
   'select',
   'remove',
+  'table',
 ] as const;
 
 export type TestId = (typeof testIds)[number];

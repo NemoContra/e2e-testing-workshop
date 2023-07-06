@@ -35,7 +35,8 @@
       "options": {
         "cypressConfig": "libs/flight-card/cypress.config.ts",
         "testingType": "e2e",
-        "devServerTarget": "flight:serve"
+        "devServerTarget": "flight:serve",
+        "port": 4201
       },
       "configurations": {
         "production": {
@@ -52,7 +53,8 @@
         "cypressConfig": "libs/flight-card/cypress.config.ts",
         "testingType": "component",
         "skipServe": true,
-        "devServerTarget": "flight:build"
+        "devServerTarget": "flight:build",
+        "port": 4202
       },
       "configurations": {
         "watch": {

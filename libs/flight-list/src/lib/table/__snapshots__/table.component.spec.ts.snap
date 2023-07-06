@@ -6,6 +6,8 @@ exports[`TableComponent should render a table with flights 1`] = `
 >
   <table
     class="table"
+    data-testid="table"
+    testid="table"
   >
     <thead>
       <tr>

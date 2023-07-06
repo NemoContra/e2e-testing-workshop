@@ -5,7 +5,7 @@ import { SidebarComponent } from '@e2e-testing-workshop/sidebar';
 
 @Component({
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SidebarComponent],
+  imports: [NavbarComponent, SidebarComponent, RouterOutlet],
   selector: 'flight-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

@@ -11,3 +11,4 @@
 - https://docs.cypress.io/guides/references/best-practices
 - https://nx.dev/more-concepts/nx-and-angular#angular.json-vs.-project.json
 - https://nx.dev/packages/workspace/generators/fix-configuration#examples
+- https://zod.dev/

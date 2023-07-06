@@ -1,5 +1,5 @@
 import { TableComponent } from './table.component';
-import { createComponentFactory } from '@ngneat/spectator';
+import { createComponentFactory } from '@ngneat/spectator/jest';
 import { mockFlights } from '@e2e-testing-workshop/test-helpers';
 
 describe('TableComponent', () => {

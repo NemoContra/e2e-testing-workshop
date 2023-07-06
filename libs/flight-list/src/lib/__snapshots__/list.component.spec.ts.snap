@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListComponent render an empty table 1`] = `
+<ng-component>
+  <flight-list>
+    <flight-table>
+    </flight-table>
+  </flight-list>
+</ng-component>
+`;
+
+exports[`ListComponent should resolve the data from http and render the table 1`] = `
+<ng-component>
+  <flight-list>
+    <flight-table>
+      <table
+        class="table"
+        data-testid="table"
+        testid="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              id
+            </th>
+            <th>
+              from
+            </th>
+            <th>
+              to
+            </th>
+            <th>
+              date
+            </th>
+            <th>
+              delayed
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              Graz
+            </td>
+            <td>
+              Mallorca
+            </td>
+            <td>
+              Oct 15, 2020
+            </td>
+            <td>
+              no
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              Hamburg
+            </td>
+            <td>
+              Mallorca
+            </td>
+            <td>
+              Oct 15, 2020
+            </td>
+            <td>
+              no
+            </td>
+          </tr>
+          <tr>
+            <td>
+              3
+            </td>
+            <td>
+              Lohr
+            </td>
+            <td>
+              Miami
+            </td>
+            <td>
+              Oct 15, 2020
+            </td>
+            <td>
+              no
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </flight-table>
+  </flight-list>
+</ng-component>
+`;

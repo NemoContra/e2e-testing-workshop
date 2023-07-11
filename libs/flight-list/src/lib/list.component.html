@@ -1,2 +1,4 @@
-<div *ngIf="flightsLoading$ | async">Loading...</div>
-<flight-table [flights]="flights$ | async" />
+<ng-container *ngrxLet="selectFlightSearchPageViewModel$; let ctx">
+  <div *ngIf="ctx.flightsLoading">Loading...</div>
+  <flight-table [flights]="ctx.flights" />
+</ng-container>

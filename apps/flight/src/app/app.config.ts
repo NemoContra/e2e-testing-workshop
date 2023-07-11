@@ -1,5 +1,5 @@
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { ApplicationConfig, isDevMode } from '@angular/core';
+import { ApplicationConfig, isDevMode, NgModule } from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding,

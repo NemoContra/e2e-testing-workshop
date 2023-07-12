@@ -7,7 +7,7 @@ import {
 import { AsyncPipe, DatePipe, NgForOf, NgIf } from '@angular/common';
 import { TableComponent } from './table/table.component';
 import { LetDirective } from '@ngrx/component';
-import { FlightSearchFacade } from './+state/flight-search.facade';
+import { FlightListFacade } from './+state/flight-list.facade';
 
 @Component({
   standalone: true,
@@ -18,11 +18,11 @@ import { FlightSearchFacade } from './+state/flight-search.facade';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListComponent implements OnInit {
-  private flightSearchFacade = inject(FlightSearchFacade);
+  private flightSearchFacade = inject(FlightListFacade);
 
-  flightSearchPageViewModel = this.flightSearchFacade.flightSearchPageViewModel;
+  flightSearchPageViewModel = this.flightSearchFacade.flightListPageViewModel;
 
   ngOnInit(): void {
-    this.flightSearchFacade.loadFlightSearch();
+    this.flightSearchFacade.loadFlightList();
   }
 }

@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~16.1.0",
     "@angular/platform-browser-dynamic": "~16.1.0",
     "@angular/router": "~16.1.0",
+    "@ngrx/component": "^16.1.0",
     "@ngrx/effects": "^16.0.1",
     "@ngrx/store": "^16.0.1",
     "@ngrx/store-devtools": "^16.0.1",
@@ -71,6 +72,7 @@
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
+    "type-fest": "^3.13.0",
     "typescript": "~5.1.3"
   }
 }

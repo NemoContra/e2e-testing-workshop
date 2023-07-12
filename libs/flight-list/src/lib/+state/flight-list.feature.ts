@@ -1,6 +1,6 @@
 import { Flight } from '@e2e-testing-workshop/models';
 import { createFeature, createReducer, on } from '@ngrx/store';
-import { flightSearchActions } from './flight-search.actions';
+import { flightListActions } from './flight-list.actions';
 
 export interface FlightState {
   flights: Flight[] | undefined;
@@ -16,15 +16,15 @@ const initialState: FlightState = {
   loadFlightsErrorCode: undefined,
 };
 
-export const flightSearchFeature = createFeature({
-  name: 'flightSearch',
+export const flightListFeature = createFeature({
+  name: 'flightList',
   reducer: createReducer(
     initialState,
-    on(flightSearchActions.loadFlights, (state) => ({
+    on(flightListActions.loadFlights, (state) => ({
       ...state,
       loadFlightsLoading: true,
     })),
-    on(flightSearchActions.loadFlightsSuccess, (state, { flights }) => ({
+    on(flightListActions.loadFlightsSuccess, (state, { flights }) => ({
       ...state,
       flights,
       loadFlightsLoading: false,
@@ -32,7 +32,7 @@ export const flightSearchFeature = createFeature({
       loadFlightsSuccess: true,
     })),
     on(
-      flightSearchActions.loadFlightsError,
+      flightListActions.loadFlightsError,
       (state, { loadFlightsErrorCode }) => ({
         ...state,
         loadFlightsErrorCode,

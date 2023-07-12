@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 
 import { ListComponent } from './list.component';
 import { provideState } from '@ngrx/store';
-import { FlightSearchEffects } from './+state/flight-search.effects';
-import { flightSearchFeature } from './+state/flight-search.feature';
+import { FlightListEffects } from './+state/flight-list.effects';
+import { flightListFeature } from './+state/flight-list.feature';
 import { provideEffects } from '@ngrx/effects';
 
 export default [
@@ -11,8 +11,8 @@ export default [
     path: '',
     component: ListComponent,
     providers: [
-      provideState(flightSearchFeature),
-      provideEffects([FlightSearchEffects]),
+      provideState(flightListFeature),
+      provideEffects([FlightListEffects]),
     ],
   },
 ] satisfies Routes;

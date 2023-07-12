@@ -7,7 +7,7 @@ import { flightSearchActions } from './flight-search.actions';
 export class FlightSearchFacade {
   private store = inject(Store);
 
-  flightSearchPageViewModel$ = this.store.select(
+  flightSearchPageViewModel = this.store.selectSignal(
     selectFlightSearchPageViewModel
   );
 

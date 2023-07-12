@@ -20,8 +20,7 @@ import { FlightSearchFacade } from './+state/flight-search.facade';
 export class ListComponent implements OnInit {
   private flightSearchFacade = inject(FlightSearchFacade);
 
-  selectFlightSearchPageViewModel$ =
-    this.flightSearchFacade.flightSearchPageViewModel$;
+  flightSearchPageViewModel = this.flightSearchFacade.flightSearchPageViewModel;
 
   ngOnInit(): void {
     this.flightSearchFacade.loadFlightSearch();

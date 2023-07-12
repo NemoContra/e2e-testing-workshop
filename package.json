@@ -72,6 +72,7 @@
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
+    "type-fest": "^3.13.0",
     "typescript": "~5.1.3"
   }
 }
